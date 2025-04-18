@@ -1,0 +1,29 @@
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.exe
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.deps.json
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.runtimeconfig.json
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.dll
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.pdb
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.AssemblyInfoInputs.cache
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.AssemblyInfo.cs
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.dll
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\refint\GerenciadordeTarefasC#.dll
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.pdb
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.genruntimeconfig.cache
+C:\Users\alexa\Desktop\Programação\GerenciadordeTarefasC#\obj\Debug\net9.0\ref\GerenciadordeTarefasC#.dll
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.exe
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.deps.json
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.runtimeconfig.json
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.dll
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\bin\Debug\net9.0\GerenciadordeTarefasC#.pdb
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.AssemblyInfoInputs.cache
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.AssemblyInfo.cs
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.sourcelink.json
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.dll
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\refint\GerenciadordeTarefasC#.dll
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.pdb
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\GerenciadordeTarefasC#.genruntimeconfig.cache
+C:\Users\alexa\Desktop\Projeto tarefas Github\GerenciadordeTarefasC#\obj\Debug\net9.0\ref\GerenciadordeTarefasC#.dll
