@@ -10,32 +10,32 @@ namespace GerenciadordeTarefasC_.Entities
 {
     public class GerenciadorDeTarefas : IEnumerable<Tarefas>
     {
-        public SortedDictionary<string, Tarefas> _tarefasPorTitulo = new SortedDictionary<string, Tarefas>();
+        public SortedDictionary<string, Tarefas> tarefasPorTitulo = new SortedDictionary<string, Tarefas>();
 
         // Construtor padrão
         public GerenciadorDeTarefas()
         {
-            _tarefasPorTitulo = new SortedDictionary<string, Tarefas>();
+            tarefasPorTitulo = new SortedDictionary<string, Tarefas>();
             
         }
 
         public void AdicionarTarefa(Tarefas tarefa)
         {
-            if (_tarefasPorTitulo.ContainsKey(tarefa.Titulo))
+            if (tarefasPorTitulo.ContainsKey(tarefa.Titulo))
             {
                 throw new ExcessõesPrograma($"Já existe uma tarefa com o título '{tarefa.Titulo}'.");
             }
-            _tarefasPorTitulo.Add(tarefa.Titulo, tarefa);
+            tarefasPorTitulo.Add(tarefa.Titulo, tarefa);
             
         }
         public SortedDictionary<string, Tarefas> TarefasPorTitulo
         {
-            get { return _tarefasPorTitulo; }
+            get { return tarefasPorTitulo; }
         }
 
         public IEnumerator<Tarefas> GetEnumerator()
         {
-            return _tarefasPorTitulo.Values.GetEnumerator();
+            return tarefasPorTitulo.Values.GetEnumerator();
         }
 
         // Implementação explícita da interface IEnumerable (não genérica)

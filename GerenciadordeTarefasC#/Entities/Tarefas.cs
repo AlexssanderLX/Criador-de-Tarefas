@@ -1,6 +1,5 @@
 ﻿using GerenciadordeTarefasC_.Entities.Enums;
 using GerenciadordeTarefasC_.Entities.Excessões;
-using GerenciadordeTarefasC_.Services;
 
 namespace GerenciadordeTarefasC_.Entities
 {
@@ -17,83 +16,84 @@ namespace GerenciadordeTarefasC_.Entities
 
         public bool ValidarTitulo(string titulo)
         {
-
-
             if (string.IsNullOrWhiteSpace(titulo) || titulo.Length > 15)
             {
-                return false;
-                throw new ExcessõesPrograma("Erro tente novamente");
+                throw new ExcessõesPrograma("Erro: O título deve ter entre 1 e 15 caracteres.");
             }
 
             foreach (char c in titulo)
             {
-                // Permite apenas letras e espaços
-                if (!char.IsLetter(c))
+                if (!char.IsLetter(c) && c != ' ') // Permite letras e espaços
                 {
-                    return false;
-                    throw new ExcessõesPrograma("Erro tente novamente");
+                    throw new ExcessõesPrograma("Erro: O título deve conter apenas letras e espaços.");
                 }
                 if (char.IsDigit(c))
                 {
-                    return false;
-                    throw new ExcessõesPrograma("Erro tente novamente");
+                    throw new ExcessõesPrograma("Erro: O título não deve conter números.");
                 }
             }
             return true;
         }
 
-
-
-
-
         public bool ValidarDataIncio(DateTime datainicio)
         {
-            if (datainicio == DateTime.Now)
+            if (datainicio < DateTime.Now.Date) // Permitir data igual ao Now (ajustado para Date)
             {
-                throw new ExcessõesPrograma("Deve ser uma data igual ou depois do que agora");
+                throw new ExcessõesPrograma("Erro: A data de início deve ser igual ou depois de hoje.");
             }
             return true;
         }
 
         public bool ValidarPeriodoTarefa(DateTime DataFinal)
         {
-            if(DataFinal < DateTime.Now) 
+            if (DataFinal < DateTime.Now.Date) // Ajustado para Date
             {
-                throw new ExcessõesPrograma("Deve ser uma data igual ou depois do que agora");
+                throw new ExcessõesPrograma("Erro: A data final deve ser igual ou depois de hoje.");
             }
             TimeSpan Diferença = DataFinal - DataInicio;
-            return Diferença.TotalDays >= 1;
+            if (Diferença.TotalDays < 1)
+            {
+                throw new ExcessõesPrograma("Erro: O período da tarefa deve ser de pelo menos 1 dia.");
+            }
+            return true;
         }
 
         public static bool StatusFazSentidoParaPeriodo(DateTime dataInicio, DateTime dataVencimento, StatusdaTarefa status)
         {
             if (status == StatusdaTarefa.EmAndamento)
             {
-                // Uma tarefa em andamento geralmente tem uma data de vencimento no futuro ou hoje.
                 if (dataVencimento < DateTime.Now.Date)
                 {
-                    return false;
+                    return false; // Retorna false, a lógica de correção estará fora da validação
                 }
             }
-
-            // Validação específica para Concluida
             else if (status == StatusdaTarefa.Concluída)
             {
-                // Uma tarefa concluída deve ter uma data de vencimento no passado ou hoje.
                 if (dataVencimento > DateTime.Now.Date)
                 {
-                    return false;
+                    return false; // Retorna false, a lógica de correção estará fora da validação
                 }
             }
             return true;
         }
-
+        public Tarefas(string titulo, string descriçãoTarefa, DateTime dataInicio, DateTime dataFinal, StatusdaTarefa status, bool fromFile)
+        {
+            Titulo = titulo;
+            DescriçãoTarefa = descriçãoTarefa;
+            DataInicio = dataInicio;
+            DataFinal = dataFinal;
+            Status = status;
+            // As validações são ignoradas neste construtor
+        }
         public Tarefas(string titulo, string descriçãoTarefa, DateTime datainicial, DateTime dataFinal, StatusdaTarefa status)
         {
             ValidarTitulo(titulo);
             ValidarPeriodoTarefa(dataFinal);
             ValidarDataIncio(datainicial);
-            StatusFazSentidoParaPeriodo(datainicial, dataFinal, status);
+            if (!StatusFazSentidoParaPeriodo(datainicial, dataFinal, status))
+            {
+                throw new ExcessõesPrograma("Erro: O status da tarefa não faz sentido para o período.");
+            }
             Titulo = titulo;
             DescriçãoTarefa = descriçãoTarefa;
             DataInicio = datainicial;
@@ -108,8 +108,6 @@ namespace GerenciadordeTarefasC_.Entities
                    $"Data Final: {DataFinal.ToShortDateString()}" + Environment.NewLine +
                    $"Status: {Status}" + Environment.NewLine +
                    "<<<<<<<FIM DA TAREFA>>>>>>>" + Environment.NewLine;
-                  
-                  
         }
     }
 }

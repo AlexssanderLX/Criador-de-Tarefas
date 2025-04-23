@@ -1,0 +1,28 @@
+Título: titiuloc
+Descrição: dbsajfajaiufgaiks
+Data de Inicio: 20/04/2025
+Data Final: 22/04/2025
+Status: EmAndamento
+<<<<<<<FIM DA TAREFA>>>>>>>
+
+Título: titolo
+Descrição: sabhsakhsaksakdjas
+Data de Inicio: 20/04/2025
+Data Final: 24/05/2025
+Status: EmAndamento
+<<<<<<<FIM DA TAREFA>>>>>>>
+
+Título: tituloa
+Descrição: dedgasujdsagjuasgjsag
+Data de Inicio: 20/04/2025
+Data Final: 21/04/2025
+Status: Concluída
+<<<<<<<FIM DA TAREFA>>>>>>>
+
+Título: titulonovo
+Descrição: sadbsadbsa
+Data de Inicio: 22/04/2025
+Data Final: 23/09/2025
+Status: EmAndamento
+<<<<<<<FIM DA TAREFA>>>>>>>
+

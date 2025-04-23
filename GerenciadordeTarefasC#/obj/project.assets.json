@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexa\\Desktop\\Projeto tarefas Github\\GerenciadordeTarefasC#\\GerenciadordeTarefasC#.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\Desktop\\Task Project\\GerenciadordeTarefasC#\\GerenciadordeTarefasC#.csproj",
       "projectName": "GerenciadordeTarefasC#",
-      "projectPath": "C:\\Users\\alexa\\Desktop\\Projeto tarefas Github\\GerenciadordeTarefasC#\\GerenciadordeTarefasC#.csproj",
+      "projectPath": "C:\\Users\\alexa\\Desktop\\Task Project\\GerenciadordeTarefasC#\\GerenciadordeTarefasC#.csproj",
       "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexa\\Desktop\\Projeto tarefas Github\\GerenciadordeTarefasC#\\obj\\",
+      "outputPath": "C:\\Users\\alexa\\Desktop\\Task Project\\GerenciadordeTarefasC#\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
